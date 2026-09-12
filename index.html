@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up Form</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <div class="sidebar">
+    <div class="logo-container">
+      <img class="logo-img" src="./images/image.png" alt="Odin Logo">
+      <span class="logo-text">ODIN</span>
+    </div>
+    <p class="credit">Photo by <a href="https://unsplash.com/@nataliejade">Halie West</a> on <a href="#">Unsplash</a></p>
+  </div>
+
+  <div class="right-section">
+
+    <div class="top-area">
+      <p class="text">
+        <strong>This is not a real online service!</strong>
+        You know you need something like this in your life to help you realize your deepest dreams.
+        Sign up <em>now</em> to get started.<br><br>
+        You <em>know</em> you want to.
+      </p>
+    </div>
+
+    <div class="form-section">
+      <h2>Let's do this!</h2>
+      <form class="signup-form">
+        <div>
+          <label for="fname">FIRST NAME</label>
+          <input id="fname" type="text" placeholder="Thor" required>
+        </div>
+        <div>
+          <label for="lname">LAST NAME</label>
+          <input id="lname" type="text" placeholder="Odinson" required>
+        </div>
+        <div>
+          <label for="email">EMAIL</label>
+          <input id="email" type="email" placeholder="Enter Email" required>
+        </div>
+        <div>
+          <label for="phone">PHONE NUMBER</label>
+          <input id="phone" type="tel" placeholder="Phone Number" required>
+        </div>
+        <div>
+          <label for="password">PASSWORD</label>
+          <input id="password" min-length="8" type="password" class="pwd" placeholder="Password" required>
+        </div>
+        <div>
+          <label for="confirm-password">CONFIRM PASSWORD</label>
+          <input id="confirm-password" min-length="8" type="password" class="pwd" placeholder="Confirm Password" required>
+        </div>
+      </form>
+    </div>
+
+    <div class="bottom-area">
+      <button class="create-btn">Create Account</button>
+      <p class="login-text">Already have an account? <a href="#">Log in</a></p>
+    </div>
+
+  </div>
 </body>
 </html>

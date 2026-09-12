@@ -1,0 +1,199 @@
+
+
+
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+
+}
+
+/* Sidebar */
+.sidebar {
+  width: 37%;
+  background-image: url('./images/halie-west-25xggax4bSA-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo-container {
+  margin-top: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  gap: 12px;
+}
+@font-face {
+  font-family: 'Norse';
+  font-weight: 400;
+  src: url('./fonts/Norse.otf') format('opentype');
+}
+.logo-img { height: 125px; }
+
+.logo-text {
+  color: #fff;
+  font-size: 3.2rem;
+  font-family: 'Norse', sans-serif;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.credit {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.75rem;
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+.credit a { color: #fff; text-decoration: underline; }
+
+/* Right Section */
+.right-section {
+  width: 63%;
+  margin-top:120px ;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+}
+
+.top-area {
+
+  display: flex;
+  align-items: center;
+  padding: 15px 70px;   /* كان 40px، قللها لـ 15px أو أقل */
+  background-color: #f9f9f9;
+}
+
+.text {
+  font-size: 1.5rem;
+  color: #222;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.text em { font-style: italic; font-weight: normal; }
+
+/* القسم الأبيض الممتد لكامل العرض */
+.form-section {
+  background-color: #fff;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 30px 70px;
+  margin-top: 50px; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+  margin: 0 0 20px;
+  font-size: 1.5rem;
+}
+
+.signup-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+}
+
+.signup-form label {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.signup-form input:user-invalid {
+  border-color: #d9534f;
+}
+.signup-form input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.bottom-area {
+  padding: 30px 70px 60px;
+}
+
+.create-btn {
+  padding: 12px 25px;
+  background-color: #596D48;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login-text {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.login-text a {
+  color: #596D48;
+  font-weight: bold;
+}
+
+
+@media (max-width: 900px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    order: 2;   /* يخليها تظهر بعد الفورم */
+    width: 100%;
+    min-height: 170px;
+    justify-content: space-between;
+  }
+
+  .right-section {
+    order: 1;   /* يخليها تظهر أول شي */
+    width: 100%;
+    margin-top: 0;
+  }
+
+  /* باقي القواعد كما هي */
+  .logo-container {
+    margin-top: 0;
+    padding: 12px 0;
+  }
+
+  .logo-img { height: 40px; }
+  .logo-text { font-size: 1.3rem; letter-spacing: 1px; }
+  .credit { font-size: 0.6rem; padding-bottom: 4px; }
+
+  .top-area {
+  background: linear-gradient(135deg, #2d3b25, #596D48);
+  color: #fff;
+  padding: 30px 24px;
+}
+  .text { font-size: 1rem; }
+
+  .form-section { padding: 24px; margin-top: 0; }
+  .form-section h2 { font-size: 1.2rem; }
+
+  .signup-form {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .bottom-area { padding: 24px; }
+}
