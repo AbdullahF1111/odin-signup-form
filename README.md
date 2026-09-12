@@ -10,10 +10,6 @@ This project is a responsive Sign-up Form built as part of a web development cur
 * Custom Local Fonts integration via `@font-face`
 * CSS Pseudo-classes (for focus states and custom input validation styling)
 
-## 📸 Screenshot
-
-![Sign-up Form Screenshot](./images/screenshot.png)
-
 ## 🔗 Links
 * **Live Demo:** [https://abdullahf1111.github.io/odin-signup-form/]
 * **Repository:** [https://github.com/AbdullahF1111/odin-signup-form]
