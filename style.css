@@ -68,8 +68,7 @@ body {
 
 .top-area {
 
-  display: flex;
-  align-items: center;
+  
   padding: 15px 70px;   /* كان 40px، قللها لـ 15px أو أقل */
   background-color: #f9f9f9;
 }
